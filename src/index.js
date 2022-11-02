@@ -13,7 +13,7 @@ root.render(
   <React.StrictMode>
     <HashRouter>
       <Routes>
-        <Route path="/widget" element={<App />}>
+        <Route path="/" element={<App />}>
           <Route index element={<ContentBox />} />
           <Route path="recent" element={<RecentBox />} />
           <Route path="google" element={<GoogleBox />} />

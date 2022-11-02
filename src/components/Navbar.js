@@ -17,44 +17,39 @@ function Navbar() {
     <div className="w-full flex flex-col space-y-5 font-medium border-b-2 shadow-sm">
       <div className="flex w-full justify-between ">
         <div
-          onClick={() => handleOnclick(0)}
           className={`flex justify-center no-wrap w-[20%] h-full py-3 ${activeList[0]}`}
         >
-          <Link to={"/widget"}>
-            <p>Ví dụ</p>
+          <Link to={"/"}>
+            <p onClick={() => handleOnclick(0)}>Ví dụ</p>
           </Link>
         </div>
 
         <div
-          onClick={() => handleOnclick(1)}
           className={`flex justify-center no-wrap w-[20%] h-full py-3 ${activeList[1]}`}
         >
-          <Link to={"/widget/recent"}>
-            <p>Gần đây</p>
+          <Link to={"/recent"}>
+            <p onClick={() => handleOnclick(1)}>Gần đây</p>
           </Link>
         </div>
         <div
-          onClick={() => handleOnclick(2)}
           className={`flex justify-center no-wrap text-center w-[20%] h-full py-3 ${activeList[2]}`}
         >
-          <Link to={"/widget/google"}>
-            <p>Google Drive</p>
+          <Link to={"/google"}>
+            <p onClick={() => handleOnclick(2)}>Google Drive</p>
           </Link>
         </div>
         <div
-          onClick={() => handleOnclick(3)}
           className={`flex justify-center no-wrap w-[20%] h-full py-3 ${activeList[3]}`}
         >
-          <Link to={"/widget/github"}>
-            <p>GitHub</p>
+          <Link to={"/github"}>
+            <p onClick={() => handleOnclick(3)}>GitHub</p>
           </Link>
         </div>
         <div
-          onClick={() => handleOnclick(4)}
           className={`flex justify-center no-wrap w-[20%] h-full py-3 ${activeList[4]}`}
         >
-          <Link to={"/widget/upload"}>
-            <p>Tải lên</p>
+          <Link to={"/upload"}>
+            <p onClick={() => handleOnclick(4)}>Tải lên</p>
           </Link>
         </div>
       </div>
