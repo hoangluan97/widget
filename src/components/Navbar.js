@@ -7,7 +7,7 @@ function Navbar() {
   const handleOnclick = (index) => {
     setActiveList((prev) => {
       return prev.map((value, idx) => {
-        if (idx == index) {
+        if (idx === index) {
           return "text-red-500";
         } else return "";
       });
@@ -20,7 +20,7 @@ function Navbar() {
           onClick={() => handleOnclick(0)}
           className={`flex justify-center no-wrap w-[20%] h-full py-3 ${activeList[0]}`}
         >
-          <Link to={"/"}>
+          <Link to={"/widget"}>
             <p>Ví dụ</p>
           </Link>
         </div>
@@ -29,7 +29,7 @@ function Navbar() {
           onClick={() => handleOnclick(1)}
           className={`flex justify-center no-wrap w-[20%] h-full py-3 ${activeList[1]}`}
         >
-          <Link to={"/recent"}>
+          <Link to={"/widget/recent"}>
             <p>Gần đây</p>
           </Link>
         </div>
@@ -37,7 +37,7 @@ function Navbar() {
           onClick={() => handleOnclick(2)}
           className={`flex justify-center no-wrap text-center w-[20%] h-full py-3 ${activeList[2]}`}
         >
-          <Link to={"/google"}>
+          <Link to={"/widget/google"}>
             <p>Google Drive</p>
           </Link>
         </div>
@@ -45,7 +45,7 @@ function Navbar() {
           onClick={() => handleOnclick(3)}
           className={`flex justify-center no-wrap w-[20%] h-full py-3 ${activeList[3]}`}
         >
-          <Link to={"/github"}>
+          <Link to={"/widget/github"}>
             <p>GitHub</p>
           </Link>
         </div>
@@ -53,7 +53,7 @@ function Navbar() {
           onClick={() => handleOnclick(4)}
           className={`flex justify-center no-wrap w-[20%] h-full py-3 ${activeList[4]}`}
         >
-          <Link to={"/upload"}>
+          <Link to={"/widget/upload"}>
             <p>Tải lên</p>
           </Link>
         </div>
